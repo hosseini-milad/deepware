@@ -1,9 +1,9 @@
 const env={
-    //siteApi:'http://localhost:4050/api',
-    siteApi:'https://admin.deepware.ir/api',
+    siteApi:'http://localhost:4050/api',
+    //siteApi:'https://admin.deepware.ir/api',
     
-    //siteApiUrl:'http://localhost:4050',
-    siteApiUrl:'https://admin.deepware.ir',
+    siteApiUrl:'http://localhost:4050',
+    //siteApiUrl:'https://admin.deepware.ir',
 
     cookieName:'sepehr-login',
     //cookieName:'panel-login',
