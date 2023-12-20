@@ -13,18 +13,6 @@ function Login(props){
     const [showPass,setShowPass] = useState(0)
     console.log(user)
     const checkLogin=()=>{
-      const cookies = new Cookies();
-                cookies.set(env.cookieName, {
-                    userId:"test",
-                    access:"manager",
-                    level:5,
-                    name:"test",
-                    date: Date.now(),
-                    token:user&&user.token,
-                    username:"test"
-                }, { path: '/' });
-                window.location.href=("/")
-          return
 
         const postOptions={
             method:'post',
