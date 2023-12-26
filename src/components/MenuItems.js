@@ -11,7 +11,7 @@ function MenuItems(props){
                 onClick={()=>setShowItem(showItem?0:1)}>
             {menu[props.lang.lang]}</h6>
             {showItem?menu.children.map((submenu,i)=>(
-                <a className={url===submenu.url?"nav-link text-white active bg-gradient-primary"
+                <a className={url===submenu.url?"nav-link text-white active bg-gradient-info"
                 :"nav-link text-white"} href={submenu.href} key={i}>
                     <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                     <i className={`menuIcon fas ${submenu.icon}`}></i>
@@ -21,7 +21,7 @@ function MenuItems(props){
             )):<></>}
         </li>:
         <li className="nav-item">
-            <a className={props.active?"nav-link text-white active bg-gradient-primary"
+            <a className={props.active?"nav-link text-white active bg-gradient-info"
             :"nav-link text-white"} href={menu.href}>
                 <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i className={`menuIcon fas ${menu.icon}`}></i>

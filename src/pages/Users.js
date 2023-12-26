@@ -9,7 +9,7 @@ import env from '../env'
 const cookies = new Cookies();
 
 function Users(props){
-  const direction = props.lang?props.lang.dir:errortrans.defaultDir;
+    const direction = props.lang?props.lang.dir:errortrans.defaultDir;
     const lang = props.lang?props.lang.lang:errortrans.defaultLang;
     const [content,setContent] = useState("")
     const [filters,setFilters] = useState("")

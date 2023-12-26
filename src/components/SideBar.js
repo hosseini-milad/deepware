@@ -37,7 +37,7 @@ function SideBar(props){
             <ul className="navbar-nav">
                 {menuList?menuList.map((menu,i)=>(
                     <li className="nav-item" key={i}>
-                        <a className={index===i?"nav-link text-white active bg-gradient-primary"
+                        <a className={index===i?"nav-link text-white active bg-gradient-info"
                         :"nav-link text-white"} href={menu.href}>
                             <div className="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i className={`menuIcon fas ${menu.icon}`}></i>
@@ -62,7 +62,7 @@ function SideBar(props){
             </div>
             <div className="sidenav-footer position-absolute w-100 bottom-0 ">
             <div className="mx-3">
-                <a className="btn bg-gradient-primary w-100" href="#" 
+                <a className="btn bg-gradient-info w-100" href="#" 
                 onClick={logOff} type="button">{errortrans.logOut[props.lang.lang]}</a>
             </div>
             </div>

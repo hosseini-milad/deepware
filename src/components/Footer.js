@@ -10,19 +10,19 @@ const Footer = (props)=>{
                     <div className="copyright text-center text-sm text-lg-start">
                       © 2023,
                       made by
-                      <a href="https://dkmehr.com" className="font-weight-bold " target="_blank"> DKMehr </a>
+                      <a href="https://sepehrai.ir" className="font-weight-bold " target="_blank"> SepehrAI </a> Team.
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
                     <ul className="nav nav-footer justify-content-center justify-content-lg-end">
                       <li className="nav-item">
-                        <a href="https://dkmehr.com" className="nav-link" target="_blank">DKMehr</a>
+                        <a href="https://sepehrai.ir" className="nav-link" target="_blank">SepehrAI</a>
                       </li>
                       <li className="nav-item">
-                        <a href="https://dkmehr.com/about" className="nav-link" target="_blank">About Us</a>
+                        <a href="https://sepehrai.ir/about" className="nav-link" target="_blank">About Us</a>
                       </li>
                       <li className="nav-item">
-                        <a href="https://dkmehr.com/blog" className="nav-link" target="_blank">Blog</a>
+                        <a href="https://sepehrai.ir/blog" className="nav-link" target="_blank">Blog</a>
                       </li>
                       <li className="nav-item">
                         <LanguageSwitcher theme="dark"/>

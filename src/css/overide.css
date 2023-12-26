@@ -294,7 +294,7 @@
     margin:auto 5px;
   }
   .box .nav-link:hover{
-    background-color: var(--bs-primary) !important;
+    background: linear-gradient(195deg, #827ef1 0%, #6070d8 100%) !important;
   }
   .create-btn-wrapper p { width: 17%;}
   .halfWidth{
@@ -365,4 +365,76 @@
     margin-left: -19px;
     margin-bottom: -19px;
     padding: 15;
+  }
+  .pe-1 {
+    padding-right: 0.25rem !important;
+    padding-left: 0.25rem !important;
+  }
+  .topMenu .nav-link{
+    font-size: 1.2rem;
+    padding: 0 7px !important;
+  }
+  .topMenu .nav-link i:hover{
+    color:var(--bs-primary);
+    transition: .3s all;
+  }
+  .avatar {
+    object-fit: cover;
+  }
+  .progress .w-100{
+    background-color: darkgreen;
+  }
+  .progress .w-95{
+    background-color: forestgreen;
+  }
+  .progress .w-90{
+    background-color: limegreen;
+  }
+  .progress .w-85{
+    background-color: lime;
+  }
+  .progress .w-80{
+    background-color: lawngreen;
+  }
+  .progress .w-75{
+    background-color: greenyellow;
+  }
+  .progress .w-70{
+    background-color: yellow;
+  }
+  .progress .w-65{
+    background-color: gold;
+  }
+  .progress .w-60{
+    background-color: orange;
+  }
+  .progress .w-55{
+    background-color: darkorange;
+  }
+  .progress .w-50{
+    background-color: orangered;
+  }
+  .progress .w-45,.progress .w-40,.progress .w-35,
+  .progress .w-30,.progress .w-25,.progress .w-20
+  {
+    background-color: tomato;
+  }
+
+  .timeline-step-rtl{
+    right:auto;
+    left:1rem;
+  }
+  
+  .main-setting{
+    width: 100%;
+  }
+  .settingSide{
+    top:70px !important;
+  }
+  .py-4 {
+    height: auto;
+  }
+  .flexJustify{
+    justify-content: space-between;
+    align-items: center;
   }

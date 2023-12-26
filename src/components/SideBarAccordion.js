@@ -76,7 +76,7 @@ function SideBarAccordion(props){
             </div>
             <div className="sidenav-footer position-absolute w-100 bottom-0 ">
             <div className="mx-3">
-                <a className="btn bg-gradient-primary w-100" href="#" 
+                <a className="btn bg-gradient-info w-100" href="#" 
                 onClick={logOff} type="button">{errortrans.logOut[props.lang.lang]}</a>
             </div>
             </div>
