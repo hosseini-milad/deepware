@@ -11,17 +11,25 @@ const tabletrans ={
         english: "Phone Number",
         persian: "شماره تماس"
     },
-    company:{
-        english: "Company",
-        persian: "شرکت"
+    ResponseCode:{
+        english: "ResponseCode",
+        persian: "کد پاسخ"
+    },
+    url:{
+        english: "URL",
+        persian: "آدرس درخواستی"
+    },
+    agent:{
+        english: "Agent",
+        persian: "Agent"
     },
     count:{
         english: "Count",
         persian: "تعداد"
     },
-    role:{
-        english: "Role",
-        persian: "نقش"
+    ip:{
+        english: "IP",
+        persian: "آی پی"
     },
     date:{
         english: "Date",
@@ -74,6 +82,14 @@ const tabletrans ={
     edit:{
         english: "Edit",
         persian: "ویرایش"
+    },
+    report:{
+        english: "Report",
+        persian: "گزارش خطا"
+    },
+    trace:{
+        english: "Trace",
+        persian: "ردیابی"
     },
     subTotal:{
         english: "SubTotal",

@@ -97,7 +97,10 @@
     width: 45%;
 }
 .sub-more-menu{
-    display: inherit;
+    display: inherit;  
+    right: auto;
+    left: 27px;
+    top: 0px;
 }
 .formInput{
     margin:15px !important;
@@ -437,4 +440,65 @@
   .flexJustify{
     justify-content: space-between;
     align-items: center;
+  }
+  .cu-company p{
+    text-align: center;
+  }
+  .cu-role p {
+    text-align: center;
+  }
+  .circle{
+    width: 40px;
+    height: 40px;
+    border: 5px solid lightgreen;
+    margin:0 5px;
+    border-radius: 50%;
+    text-align: center;
+  line-height: 2.5;
+  }
+  .predict-100{
+    border-color: darkgreen;
+  }
+  .predict-95{
+    border-color: forestgreen;
+  }
+  .predict-90{
+    border-color: limegreen;
+  }
+  .predict-85{
+    border-color: lime;
+  }
+  .predict-80{
+    border-color: lawngreen;
+  }
+  .predict-75{
+    border-color: greenyellow;
+  }
+  .predict-70{
+    border-color: yellow;
+  }
+  .predict-65{
+    border-color: gold;
+  }
+  .predict-60{
+    border-color: orange;
+  }
+  .predict-55{
+    border-color: darkorange;
+  }
+  .predict-50{
+    border-color: orangered;
+  }
+  .predict-45,.predict-40,.predict-35,
+  .predict-30,.predict-25,.predict-20
+  {
+    border-color: tomato;
+  }
+  .predict-15,.predict-10,.predict-5,.predict-0
+  {
+    border-color: red;
+  }
+
+  .more-btn{
+    position: relative;
   }

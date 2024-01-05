@@ -11,7 +11,7 @@ function DashboardChart(props){
                 <div class="chart">
                   <WeekStatistic attack={props.report&&props.report.totalAttack}
                   total={props.report&&props.report.total} lang={props.lang} direction={props.direction}
-                  label={["","S","S","M","T","W","T","F"]}/>
+                  label={["S","S","M","T","W","T","F"]}/>
                 </div>
               </div>
             </div>
@@ -23,7 +23,8 @@ function DashboardChart(props){
                 <i class="fas fa-history"></i> 
                 <p class="mb-0 text-sm">30 {errortrans.minAgo[props.lang]} </p>
                 <button className="btn bg-gradient-info w-50 mb-0 stat-btn" type="button" 
-                  data-target="infoToast">{errortrans.details[props.lang]}</button>
+                  data-target="infoToast"
+                  onClick={()=>window.location.href="/report"}>{errortrans.details[props.lang]}</button>
               </div>
             </div>
           </div>
@@ -35,7 +36,7 @@ function DashboardChart(props){
                 <div class="chart">
                 <WeekStatistic attack={["2","12","5","3","11","20","13","2"]}
                   total={["12","30","40","13","22","11","30","31"]}
-                  label={["","S","S","M","T","W","T","F"]} lang={props.lang}/>
+                  label={["S","S","M","T","W","T","F"]} lang={props.lang}/>
                 </div>
               </div>
             </div>
@@ -59,7 +60,7 @@ function DashboardChart(props){
                 <div class="chart">
                 <WeekStatistic attack={["21","1","15","2","11","20","13","2"]}
                   total={["152","120","100","113","122","111","130","131"]}
-                  label={["","S","S","M","T","W","T","F"]} lang={props.lang}/>
+                  label={["S","S","M","T","W","T","F"]} lang={props.lang}/>
                 </div>
               </div>
             </div>

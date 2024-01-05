@@ -1,9 +1,9 @@
 const env={
-    siteApi:'http://localhost:4050/api',
-    //siteApi:'https://deepadmin.deepware.ir/api',
+    //siteApi:'http://localhost:4050/api',
+    siteApi:'https://deepadmin.deepware.ir/api',
     
-    siteApiUrl:'http://localhost:4050',
-    //siteApiUrl:'https://deepadmin.deepware.ir',
+    //siteApiUrl:'http://localhost:4050',
+    siteApiUrl:'https://deepadmin.deepware.ir',
 
     cookieName:'sepehr-login',
     //cookieName:'panel-login',
@@ -86,6 +86,10 @@ export function PageInfoFunction(orderInfo,filters){
     allowPre:currentPage==totalPage?false:true
   })
 }
-
+export function findCircle(value){
+  var valuePercent = Math.round(value*20)*5
+  var outClass = `circle predict-${valuePercent}`
+  return({class:outClass,value:valuePercent})
+}
   
 export default env

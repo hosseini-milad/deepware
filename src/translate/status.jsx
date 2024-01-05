@@ -103,6 +103,20 @@ const statustrans ={
         index:9,
         color: "rgb(183, 29, 24)",
         background: "rgba(255, 86, 48, 0.16)"
+    },
+    attack:{
+        english: "Attack",
+        persian: "Attack",
+        index:9,
+        color: "rgb(183, 29, 24)",
+        background: "rgba(255, 86, 48, 0.16)"
+    },
+    benign:{
+        english: "Benign",
+        persian: "Benign",
+        index:2,
+        color: "rgb(17, 141, 87)",
+        background: "rgba(34, 197, 94, 0.16)"
     }
 }
 export default statustrans
