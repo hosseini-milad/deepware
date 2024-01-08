@@ -28,6 +28,7 @@ import Services from './pages/Services';
 import ServiceDetailHolder from './modules/Service/ServiceData/ServiceDetailHolder';
 import Sepidar from './modules/Config/Sepidar';
 import Models from './pages/Models';
+import UserProfile from './pages/Profile'
 import Report from './pages/Report';
 
 const cookies = new Cookies();
@@ -59,7 +60,8 @@ root.render(
         <Route path="/customers/detail/:userId" element={<Layout><UserDetailHolder lang={lang}/></Layout>}/>
 
         <Route path="/models" element={<Layout><Models lang={lang}/></Layout>}/>
-        <Route path="/report" element={<Layout><Report lang={lang}/></Layout>} />
+        <Route path="/UserProfile" element={<Layout><UserProfile lang={lang}/></Layout>}/>
+        <Route path="/report/:mode" element={<Layout><Report lang={lang}/></Layout>} />
 
         <Route path="/services" element={<Layout><Services lang={lang}/></Layout>}/>
         <Route path="/services/detail/:orderId" element={<Layout><ServiceDetailHolder lang={lang}/></Layout>}/>
