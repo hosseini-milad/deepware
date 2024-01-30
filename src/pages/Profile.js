@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   MDBCol,
   MDBContainer,
@@ -19,11 +19,15 @@ import {
 import Cookies from 'universal-cookie';
 import profiletrans from "../translate/profile";
 import env from '../env';
+import ProfileImage from '../modules/Profile/ProfileImage';
 
 const cookies = new Cookies();
 
 export default function UserProfile(props) {
-
+    const [data,setData] = useState({
+      name:"Ahmad",
+      sName:"Alimoradi"
+    })
     const item = profiletrans;
     const token=cookies.get(env.cookieName);
     const lang = props.lang?props.lang.lang:profiletrans.defaultLang;
@@ -35,19 +39,7 @@ export default function UserProfile(props) {
 
         <MDBRow>
           <MDBCol lg="4">
-            <MDBCard className="mb-4">
-              <MDBCardBody className="text-center">
-                <MDBCardImage
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
-                  alt="avatar"
-                  className="rounded-circle"
-                  style={{ width: '150px' }}
-                  fluid />
-              
-                <div className="d-flex justify-content-center mb-2">
-                </div>
-              </MDBCardBody>
-            </MDBCard>
+            <ProfileImage alt={"Sample Alt"}/>
 
             <MDBCard className="mb-4 mb-lg-0">
               <MDBCardBody className="p-0">
@@ -84,7 +76,9 @@ export default function UserProfile(props) {
                     <MDBCardText>{profiletrans.Fullname[lang]}</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Johnatan Smith</MDBCardText>
+                    <MDBCardText className="text-muted">
+                      {data.name+" "+data.sName}
+                    </MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />

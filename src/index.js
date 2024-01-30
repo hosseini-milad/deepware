@@ -55,7 +55,7 @@ root.render(
         <Route path="/login" element={<Layout><Profile lang={lang}/></Layout>}/>
         <Route path="/dashboard" element={<Layout><Dashboard lang={lang}/></Layout>}/>
         <Route path="/users" element={<Layout><Users lang={lang} user={1}/></Layout>}/>
-        <Route path="/users/detail/:userId" element={<Layout><UserDetailHolder lang={lang} user={1}/></Layout>}/>
+        <Route path="/users/detail/:userId" element={<Layout><UserProfile lang={lang} user={1}/></Layout>}/>
 
         <Route path="/customers" element={<Layout><Users lang={lang} /></Layout>}/>
         <Route path="/customers/detail/:userId" element={<Layout><UserDetailHolder lang={lang}/></Layout>}/>

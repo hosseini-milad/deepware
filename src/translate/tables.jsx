@@ -11,6 +11,14 @@ const tabletrans ={
         english: "Phone Number",
         persian: "شماره تماس"
     },
+    company:{
+        english: "Company",
+        persian: "شرکت"
+    },
+    role:{
+        english: "Role",
+        persian: "نقش"
+    },
     ResponseCode:{
         english: "ResponseCode",
         persian: "کد پاسخ"
