@@ -24,7 +24,7 @@ function DashboardChart(props){
                 <p class="mb-0 text-sm">30 {errortrans.minAgo[props.lang]} </p>
                 <button className="btn bg-gradient-info w-50 mb-0 stat-btn" type="button" 
                   data-target="infoToast"
-                  onClick={()=>window.location.href="/report"}>{errortrans.details[props.lang]}</button>
+                  onClick={()=>window.location.href="/report/service"}>{errortrans.details[props.lang]}</button>
               </div>
             </div>
           </div>
@@ -48,7 +48,8 @@ function DashboardChart(props){
                 <i class="fas fa-history"></i>
                 <p class="mb-0 text-sm"> 4 {errortrans.minAgo[props.lang]} </p>
                 <button className="btn bg-gradient-info w-50 mb-0 stat-btn" type="button" 
-                  data-target="infoToast">{errortrans.details[props.lang]}</button>
+                  data-target="infoToast"
+                  onClick={()=>window.location.href="/report/systems"}>{errortrans.details[props.lang]}</button>
               </div>
             </div>
           </div>
@@ -72,7 +73,8 @@ function DashboardChart(props){
                 <i class="fas fa-history"></i>
                 <p class="mb-0 text-sm"> 15 {errortrans.minAgo[props.lang]} </p>
                 <button className="btn bg-gradient-info w-50 mb-0 stat-btn" type="button" 
-                  data-target="infoToast">{errortrans.details[props.lang]}</button>
+                  data-target="infoToast"
+                  onClick={()=>window.location.href="/report/devices"}>{errortrans.details[props.lang]}</button>
               </div>
             </div>
           </div>
