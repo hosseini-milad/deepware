@@ -29,6 +29,7 @@ import ServiceDetailHolder from './modules/Service/ServiceData/ServiceDetailHold
 import Sepidar from './modules/Config/Sepidar';
 import Models from './pages/Models';
 import Report from './pages/Report';
+import Park from './pages/Park';
 
 const cookies = new Cookies();
 const style = document.getElementById('style-direction');
@@ -60,6 +61,7 @@ root.render(
 
         <Route path="/models" element={<Layout><Models lang={lang}/></Layout>}/>
         <Route path="/report" element={<Layout><Report lang={lang}/></Layout>} />
+        <Route path="/park" element={<Layout><Park lang={lang}/></Layout>} />
 
         <Route path="/services" element={<Layout><Services lang={lang}/></Layout>}/>
         <Route path="/services/detail/:orderId" element={<Layout><ServiceDetailHolder lang={lang}/></Layout>}/>

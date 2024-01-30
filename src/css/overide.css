@@ -502,3 +502,14 @@
   .more-btn{
     position: relative;
   }
+
+  .popNow{
+    position: fixed;
+    z-index: 10000;
+    top: 16px;
+    left: 20px;
+    background-color: #fff;
+    width: 1400px;
+    height: 1000px;
+    padding: 20px;
+  }
