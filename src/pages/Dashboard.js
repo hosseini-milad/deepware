@@ -74,7 +74,7 @@ function Dashboard(props) {
     <div className="container-fluid py-4" style={{ direction: direction }}>
       <DashBoardDaily report={totalToday} direction={direction} lang={lang} />
       <DashboardChart report={weekData} direction={direction} lang={lang} />
-      <ServerStatusPane className="mb-4" />
+      <ServerStatusPane lang={lang} className="mb-4" />
       <div className="row mb-4">
         <DashboardProject lang={lang} />
         <DashboardOverView />
