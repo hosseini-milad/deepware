@@ -1,8 +1,9 @@
 import Carousel from '../../../components/Carousel/Carousel';
 import ServerStatus from './ServerStatus';
+import mocks from './mocks.json';
 
 export default function ServerStatusPane({ data, className }) {
-  const Slides = data.map((data) => <ServerStatus data={data} />);
+  const Slides = mocks.map((data) => <ServerStatus data={data} />);
 
   return (
     <div className={`card ${className}`}>
