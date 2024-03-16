@@ -24406,7 +24406,11 @@
   .sidenav[data-color="dark-blue"] .navbar-nav>.nav-item .nav-link.active+.collapsing .nav-item .nav-link.active+.collapse .nav-item .nav-link.active {
     background-image: linear-gradient(195deg, #1A237E 0%, #1A237E 100%);
   }
-  
+
+  .main-content {
+    overflow: hidden;
+  }
+
   .main-content,
   .sidenav {
     transition: all 0.2s ease-in-out;
@@ -27756,16 +27760,6 @@
   .token.builtin,
   .token.inserted {
     color: #690;
-  }
-  
-  .token.operator,
-  .token.entity,
-  .token.url,
-  .language-css .token.string,
-  .style .token.string {
-    color: #9a6e3a;
-    /* This background color was intended by the author of this theme. */
-    background: rgba(255, 255, 255, 0.5);
   }
   
   .token.atrule,
